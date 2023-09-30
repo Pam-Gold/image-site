@@ -1,0 +1,393 @@
+/*  */
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background: #f1f1f1;
+}
+.main-content {
+  height: fit-content;
+  width: 100%;
+  background:#f1f1f1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px fit-content;
+  row-gap: 35px;
+  font-family: tahoma;
+  position: relative;
+
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 5px 10px;
+  position: relative;
+}
+
+#navbar__logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+}
+
+.search-menu {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px 0px 0px 10px;
+  border: 2px solid;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.search-button {
+  padding: 6px 12px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+.menu__notify {
+  margin: 0px 5px;
+}
+.menu__account {
+  margin: 0px 5px;
+}
+.account__icon,
+.notify__icon {
+  cursor: pointer;
+}
+.account__icon i,
+.notify__icon i {
+  font-size: 1.35rem;
+}
+
+.notification{
+  height: fit-content;
+  width: 250px;
+  background: #fff;
+  
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 20px;
+  display: none;
+}
+.notify-title{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.notify-item{
+  height: fit-content;
+  width: 100%;
+}
+
+.toggle--notification{
+  display: flex;
+}
+
+.notification-text{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+/* Container */
+
+.container {
+  display: grid;
+  justify-content: center;
+  gap: 35px;
+}
+
+.cards {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background: black; */
+  border-radius: 25px;
+  
+}
+.card__image{
+  
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+
+  transition: 0.3s ease;
+}
+.image{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+
+}
+.card__button-share,
+.card__button-more,
+.card__button-like {
+  position: absolute;
+  background: #f1f1f1;
+  padding: 5px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card__button-share {
+  bottom: 20px;
+  right: 80px;
+  margin: 0px 5px;
+}
+.card__button-more {
+  bottom: 20px;
+  right: 10px;
+  margin: 0px 5px;
+}
+.card__button-like {
+  bottom: 20px;
+  right: 45px;
+  margin: 0px 5px;
+}
+.card__button-more i,
+.card__button-share i {
+  font-size: 1.1rem;
+}
+
+.modal-share {
+  position: absolute;
+  background: #fff;
+  
+  top: 60px;
+  left: -85px;
+  z-index: 2;
+  height: 150px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.share-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.share-title-close {
+  cursor: pointer;
+}
+.share-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.social-icons {
+  height: 30px;
+  width: 30px;
+  margin: 0px 5px;
+}
+.social-icons img {
+  height: 100%;
+  width: 100%;
+}
+/*  */
+
+.modal-liked {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  display: none;
+  border-radius: 25px;
+}
+
+.liked-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.liked-image {
+  height: 150px;
+  width: 150px;
+}
+
+/*  */
+
+.modal-more {
+  position: absolute;
+  background: #fff;
+  
+  top: 60px;
+  left: -150px;
+  z-index: 3;
+  border-radius: 20px;
+  padding: 25px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: ; */
+  display: none;
+}
+.modal-more div {
+  font-family: arial;
+  font-size: 1.02rem;
+  font-weight: bold;
+  transition: 0.3 ease;
+}
+.modal-more div:hover {
+  color: lightgray;
+}
+.modal-more a{
+  color: #111;
+  text-decoration: none;
+}
+
+.modal-blank{
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 99;
+  background: #fff;
+  padding: 15px 20px;
+  font-family: arial;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  display: none;
+}
+
+.toggle--more{
+  display: flex;
+}
+
+/*  */
+
+.modal-hidden{
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  border-radius: 25px;
+  display: none;
+
+}
+.hide-title{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.hide-text{
+font-size: 1rem;
+text-align: center;
+}
+
+.undo-button{
+  font-size: 1rem;
+  font-weight: bold;
+  background: lightgray;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 10px;
+  cursor: pointer;
+
+}
+.modal-more, .modal-share, .modal-blank{
+  box-shadow: 0 0 5px #111;
+}
+
+/* BreakPoints */
+@media screen and (max-width: 480px) {
+  #navbar__logo {
+    font-size: 1.2rem;
+  }
+  input {
+    width: 90px;
+  }
+  .container {
+    grid-template-columns: 200px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  #navbar__logo {
+    font-size: 1.4rem;
+  }
+  input {
+    width: 200px;
+  }
+  .container {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #navbar__logo {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 500px;
+  }
+  .container {
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px ;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #navbar__logo {
+    font-size: 1.6rem;
+  }
+  input {
+    width: 700px;
+  }
+  .container {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px 350px ;
+  }
+}

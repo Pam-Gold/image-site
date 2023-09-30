@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Site | simple pinterest recreation</title>
+    <!-- Imports -->
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.4.2-web/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-6.4.2-web/css/all.css"
+    />
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Scripting -->
+    <script defer src="js/loader.js"></script>
+    <script defer src="js/main.js" ></script>
+    <script defer src="js/components.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <!-- <section class="page-loader"></section> -->
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="navbar">
+        <!-- Logo -->
+        <a href="" id="navbar__logo"><i class="fa-solid fa-image"></i>Logo</a>
+        <!-- Search -->
+        <div class="search-menu">
+          <input type="search" name="" id="search" placeholder="Search" />
+          <button class="search-button">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        </div>
+        <!-- Navbar Menu -->
+        <div class="navbar__menu">
+          <div class="menu__notify">
+            <span class="notify__icon"><i class="fa-solid fa-bell"></i></span>
+            <div class="notification">
+              <h4 class="notify-title">Updates</h4>
+              <div class="notify-item">
+                w</div>
+            </div>
+          </div>
+          <div class="menu__account">
+            <span class="account__icon"
+              ><i class="fa-regular fa-circle-user"></i
+            ></span>
+            <div class="account"></div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!--  -->
+
+      <div class="container">
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/one.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+
+<!--  -->
+
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/two.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/three.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/four.png" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/five.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/six.png" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/seven.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/eight.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/nine.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/ten.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/eleven.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  -->
+        <div class="cards">
+          <!-- Popups -->
+          <div class="card__image"><img src="" class="image" /></div>
+          <div class="modal-hidden">
+            <h4 class="hide-title">Image Hidden</h4>
+
+            <p class="hide-text">
+              We will try to reduce results like this in the future
+            </p>
+            <button class="undo-button">Undo</button>
+          </div>
+          <div class="modal-liked">
+            <h4 class="liked-title">Image Liked</h4>
+            <img src="images/others/heart.png"  class="liked-image">
+          </div>
+          <!-- Buttons -->
+          <div class="card__button-share">
+            <!-- Icon -->
+            <span class="share__icon"
+              ><i class="fa-solid fa-arrow-up-from-bracket"></i
+            ></span>
+            <!-- Popups -->
+            <div class="modal-share">
+              <span class="share-title">
+                <h4 class="share-title-item">Share</h4>
+                <span class="share-title-close"><i class="fa-solid fa-close"></i></span>
+              </span>
+              <!--  -->
+              <div class="share-socials">
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-facebook.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-instagram.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-twitterx.svg" alt=""></a></span>
+                <span class="social-icons"><a href=""><img src="images/icon/icons8-pinterest.svg" alt=""></a></span>
+              </div>
+            </div>
+          </div>
+          <div class="card__button-like"><i class="fa-solid fa-heart"></i></div>
+          <div class="card__button-more">
+            <span class="more__icon"><i class="fa-solid fa-ellipsis"></i></span>
+            <!--  -->
+            <div class="modal-more">
+              <div class="more-hide">Hide pin</div>
+              <div class="more-download"><a href="/image-site/images/others/twelve.jpg" download="download.png">Download Image</a></div>
+              <div class="more-report">Report Pin</div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+<!--  -->
+      <div class="modal-blank">
+        <h3 class="dowload-title"></h3>
+      </div>
+    </main>
+  </body>
+</html>
