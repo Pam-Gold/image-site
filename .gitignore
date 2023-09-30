@@ -23,11 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-*.svg
-*.jpg
-*.png
-*.txt
-*.yml
-*.ttf
-*.woff2
-*.json
