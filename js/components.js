@@ -62,40 +62,40 @@ if (navigator.onLine) {
 } else {
   let imageObject = [
     {
-      img: "/image-site/images/others/one.jpg",
+      img: "/images/others/one.jpg",
     },
     {
-      img: "/image-site/images/others/two.jpg",
+      img: "/images/others/two.jpg",
     },
     {
-      img: "/image-site/images/others/three.jpg",
+      img: "/images/others/three.jpg",
     },
     {
-      img: "/image-site/images/others/four.png",
+      img: "/images/others/four.png",
     },
     {
-      img: "/image-site/images/others/five.jpg",
+      img: "/images/others/five.jpg",
     },
     {
-      img: "/image-site/images/others/six.png",
+      img: "/images/others/six.png",
     },
     {
-      img: "/image-site/images/others/seven.jpg",
+      img: "/images/others/seven.jpg",
     },
     {
-      img: "/image-site/images/others/eight.jpg",
+      img: "/images/others/eight.jpg",
     },
     {
-      img: "/image-site/images/others/nine.jpg",
+      img: "/images/others/nine.jpg",
     },
     {
-      img: "/image-site/images/others/ten.jpg",
+      img: "/images/others/ten.jpg",
     },
     {
-      img: "/image-site/images/others/eleven.jpg",
+      img: "/images/others/eleven.jpg",
     },
     {
-      img: "/image-site/images/others/twelve.jpg",
+      img: "/images/others/twelve.jpg",
     },
   ];
 
